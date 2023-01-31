@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <header class="bg-primary text-white p-4 mb-4">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>Movie Gallery</h1>
+                </div>
+                <div class="col-sm-6 text-right ">
+                    <button class="btn btn-warning" id="showModelBtn">Add Movie</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container mt-4">
+        <div class="row" id="movieContainer">
+            
+        </div>
+    </div>
+
+
+
+
+    <div class="backDrop myClose" id="backDrop"></div>
+    <div class="myModel" id="myModel">
+        <div class="card">
+            <div class="card-header">
+                <h2>Movie Details
+                    <a href="javascript:;" class="myClose"><i class="fa-solid fa-xmark"></i></a>
+                </h2>
+            </div>
+            <div class="card-body">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" name="" id="title" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="imgUrl">Image URL</label>
+                    <input type="text" name="" id="imgUrl" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="rating">Rating</label>
+                    <input type="text" name="" id="rating" class="form-control">
+                </div>
+                <div class="form-group text-right">
+                    <button class="btn btn-primary btn-lg" id="addMovieBtn">Add Movie</button>
+                    <button class="btn btn-danger btn-lg myClose">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- <div class="col-sm-4">
+    <div class="card movieCard">
+        <div class="card-header">
+            <h3>Movie Title</h3>
+        </div>
+        <div class="card-body">
+            <figure class="mb-0 movieImg">
+                <img  src="https://tse3.mm.bing.net/th?id=OIP.0yo-jUn0WH6hRn6k7wQJngHaFQ&pid=Api&P=0" alt="">
+            </figure>
+        </div>
+        <div class="card-footer">
+            <p class="text-right font-weight-bold">5/5</p>
+        </div>
+    </div> 
+</div> -->

@@ -1,1 +1,0 @@
-# Jayvant-Movie-Gallery
